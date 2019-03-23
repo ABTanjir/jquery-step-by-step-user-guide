@@ -2,11 +2,15 @@
 a step by step user guide plugin based on jQuery
 
 # step 1: Load the pageintro.css, jquery and pageintro.js to style the guided tours.
+
+```sh
 <link href="dist/pageintro.css" rel="stylesheet">
 <script src="//code.jquery.com/jquery.min.js"></script>
 <script src="dist/pageintro.js"></script>
+```
 
 # step 2: Add custom options and configure the selector and text which should appare
+```sh
 var options = {
     container: 'body',
     spacing: 20,
@@ -39,9 +43,10 @@ var options = {
       }
     ]
 };
-
+```
 
 # step 3: Initialize and start the guide on start
-
+```sh
 PageIntro.init(options);
 PageIntro.start();
+```
